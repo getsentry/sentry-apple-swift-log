@@ -1,5 +1,5 @@
 import Logging
-import Sentry
+import SentrySwift
 
 /// A `swift-log` handler that forwards log entries to Sentry's structured logging system.
 ///
@@ -20,7 +20,8 @@ import Sentry
 /// ## Usage
 /// ```swift
 /// import Logging
-/// import Sentry
+/// import SentrySwift
+/// import SentrySwiftLog
 ///
 /// // Initialize Sentry SDK
 /// SentrySDK.start { options in

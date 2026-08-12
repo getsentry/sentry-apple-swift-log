@@ -19,7 +19,7 @@ let package = Package(
             name: "SentrySwiftLog",
             dependencies: [
                 .product(name: "Logging", package: "swift-log"),
-                .product(name: "Sentry", package: "sentry-cocoa")
+                .product(name: "SentrySPM", package: "sentry-cocoa")
             ]
         ),
         .testTarget(
@@ -27,7 +27,7 @@ let package = Package(
             dependencies: [
                 "SentrySwiftLog",
                 .product(name: "Logging", package: "swift-log"),
-                .product(name: "Sentry", package: "sentry-cocoa")
+                .product(name: "SentrySPM", package: "sentry-cocoa")
             ]
         )
     ]

@@ -20,7 +20,8 @@ dependencies: [
 ## Quick Start
 
 ```swift
-import Sentry
+import SentrySwift
+import SentrySwiftLog
 import Logging
 
 SentrySDK.start { options in
