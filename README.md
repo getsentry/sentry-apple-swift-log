@@ -13,27 +13,15 @@ Add the following dependencies to your `Package.swift` or Xcode package dependen
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/getsentry/sentry-apple-swift-log", from: "9.0.0")
+    .package(url: "https://github.com/getsentry/sentry-apple-swift-log", from: "1.0.0")
 ]
-```
-
-Then add the `SentrySwiftLog` product to your target:
-
-```swift
-.target(
-    name: "MyApp",
-    dependencies: [
-        .product(name: "SentrySwiftLog", package: "sentry-apple-swift-log")
-    ]
-)
 ```
 
 ## Quick Start
 
 ```swift
-import Logging
 import Sentry
-import SentrySwiftLog
+import Logging
 
 SentrySDK.start { options in
     options.dsn = "YOUR_DSN"
@@ -118,7 +106,7 @@ The handler automatically includes the following attributes with every log entry
 - [Sentry Cocoa SDK Documentation](https://docs.sentry.io/platforms/apple/)
 - [Sentry Logs Documentation](https://docs.sentry.io/platforms/apple/logs/)
 - [SwiftLog Repo](https://github.com/apple/swift-log)
-- [Sentry Conventions](https://conventions.sentry.dev/attributes/)
+- [Sentry Conventions](https://getsentry.github.io/sentry-conventions/generated/attributes/)
 
 ## License
 
